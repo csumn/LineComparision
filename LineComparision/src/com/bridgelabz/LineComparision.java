@@ -37,11 +37,16 @@ public class LineComparision {
         
 	Double LengthOfLine2 = Math.sqrt( ( x4 - x3 ) * ( x4 - x3 ) + ( y4 - y3 ) * ( y4 - y3 ));
 	System.out.println(" Length of Line is two : "+LengthOfLine2);
-        
-	if(LengthOfLine1.equals(LengthOfLine2)) {
-		System.out.println("Both the lines are equal");
-	}else
-		System.out.println("Both the lines are not equal");
+	
+	int value = LengthOfLine1.compareTo(LengthOfLine2);
+	
+	if(value<0) {
+		System.out.println("Line one is Smaller then Line two");
+	}else if(value>0) {
+		System.out.println("Line one is Larger then Line two");
+	}else {
+		System.out.println("Both Lines are equal");
+	}
 	}
 }
 
