@@ -8,7 +8,7 @@ public class LineComparision {
 		
 		Scanner obj = new Scanner(System.in);
 		System.out.println("Values for Line one ");
-        System.out.println("Enter value for x1 : ");
+		System.out.println("Enter value for x1 : ");
         int x1 = obj.nextInt();
         System.out.println("Enter value for y1 : ");
         int y1 = obj.nextInt();
